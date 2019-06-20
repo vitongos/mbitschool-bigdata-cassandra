@@ -10,12 +10,13 @@ Ejecutar el siguiente script en un terminal:
 ```bash
 cd
 git clone https://github.com/vitongos/mbitschool-bigdata-cassandra.git cassandra-src
+cd /home/centos/cassandra-src/deploy
+chmod +x *.sh
 ```
 
-Crear los contenedores:
+Instalar los paquetes y crear los contenedores:
 ```bash
 sudo -i
 cd /home/centos/cassandra-src/deploy
-chmod +x *.sh
-./cassandra.sh
+./setup.sh
 ```
